@@ -6,10 +6,10 @@ WORKDIR /mainapp
 
 RUN pip install -r requirements.txt
 
-COPY mainapp/* /mainapp
+COPY ./mainapp/* /mainapp
 
-COPY ./examples /webapp/examples
+COPY ./examples /mainapp/examples
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "app.py" ]
+CMD [ "./mainapp/app.py" ]
