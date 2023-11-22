@@ -8,7 +8,7 @@ RUN pip install -r requirements.txt
 
 COPY mainapp/* /mainapp
 
-COPY ./examples /webapp/examples
+COPY ./examples /mainapp/examples
 
 ENTRYPOINT [ "python" ]
 
